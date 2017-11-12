@@ -14,7 +14,7 @@ exports.index = function(req, res){
 
 	var from = '12016728822';
 	var to = '14083102536';
-	var text = 'Nice to see you at our restaurant today. How was your experience ?';
+	var text = 'Hey susheel, greetings from the restaurant. We just wanted to know how do you like the burrito you just had?';
 
 	console.log(nexmo.message.sendSms(from, to, text));
   res.render('index', { title: 'Express' });
