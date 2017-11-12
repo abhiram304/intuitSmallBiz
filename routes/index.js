@@ -24,7 +24,7 @@ exports.index = function(req, res){
 
 exports.incoming1 = function(req, res){
 	var apiai = require('apiai');
-	 
+	var Nexmo = require('nexmo');
 	var app = apiai("93e838129c1f441d824b26677b715f93");
 	console.log(req.query.text); 
 	var request_api = app.textRequest(req.query.text, {
