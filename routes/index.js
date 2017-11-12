@@ -39,7 +39,7 @@ exports.incoming1 = function(req, res){
 	  	});
 
 	  	var from = '12016728822';
-	  	var to = '15102039956';
+	  	var to = '14083102536';
 	  	//var text = 'hello';
 
 	  	console.log(nexmo.message.sendSms(from, to, response.result.fulfillment.speech));
