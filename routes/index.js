@@ -21,6 +21,27 @@ exports.index = function(req, res){
 };
 
 
+exports.sendPromo = function(req, res){
+	
+	var Nexmo = require('nexmo');
+
+	var nexmo = new Nexmo({
+	  apiKey:'51a228ab' ,
+	  apiSecret:'4331f47de69da867' ,
+	});
+
+	var from = '12016728822';
+	var to = '14083102536';
+	var text = 'Hey, thank you for visiting our Tequeria on 11th of November. As a compliment we are offering you 5% off on your next purchase. Use this promocode:  Yu8IoTynh';
+
+	console.log(nexmo.message.sendSms(from, to, text));
+  res.render('index', { title: 'Express' });
+};
+
+
+
+
+
 
 exports.incoming1 = function(req, res){
 	var apiai = require('apiai');
