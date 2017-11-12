@@ -33,6 +33,16 @@ exports.incoming1 = function(req, res){
 	 
 	request_api.on('response', function(response) {
 	    console.log("response from api.ai"+response.result.fulfillment.speech);
+	    var nexmo = new Nexmo({
+	  	  apiKey:'51a228ab' ,
+	  	  apiSecret:'4331f47de69da867' ,
+	  	});
+
+	  	var from = '12016728822';
+	  	var to = '15102039956';
+	  	//var text = 'hello';
+
+	  	console.log(nexmo.message.sendSms(from, to, response.result.fulfillment.speech));
 	});
 	 
 	request_api.on('error', function(error) {
