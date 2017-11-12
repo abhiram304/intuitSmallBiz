@@ -13,8 +13,8 @@ exports.index = function(req, res){
 	});
 
 	var from = '12016728822';
-	var to = '15102039956';
-	var text = 'hello';
+	var to = '14083102536';
+	var text = 'Nice to see you at our restaurant today. How was your experience ?';
 
 	console.log(nexmo.message.sendSms(from, to, text));
   res.render('index', { title: 'Express' });
