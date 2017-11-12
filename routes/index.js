@@ -23,5 +23,5 @@ exports.index = function(req, res){
 
 
 exports.incoming1 = function(req, res){
-	console.log(req.query);
+	console.log(req.query.text);
 };
