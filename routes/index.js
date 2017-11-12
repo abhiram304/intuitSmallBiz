@@ -32,7 +32,7 @@ exports.incoming1 = function(req, res){
 	});
 	 
 	request_api.on('response', function(response) {
-	    console.log("response from api.ai"+response.fulfillment.speech);
+	    console.log("response from api.ai"+response.fulfillment);
 	});
 	 
 	request_api.on('error', function(error) {
