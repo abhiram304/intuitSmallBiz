@@ -60,7 +60,7 @@ realmId="123145710497954";
 				"Line": [{
 					"Id": "1",
 					"LineNum": 1,
-					"Description": "Pest Control Services",
+					"Description": req.param.description,
 					"Amount": 45.0,
 					"DetailType": "SalesItemLineDetail",
 					"SalesItemLineDetail": {
