@@ -29,6 +29,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/incoming1', routes.incoming1);
+app.get('/sendPromo', routes.sendPromo);
 app.get('/users', user.list);
 
 
